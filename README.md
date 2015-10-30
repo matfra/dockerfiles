@@ -1,8 +1,15 @@
-** First start
+
+## Build
 ```
-sudo docker run --name gmsyncmatt -it -v /home/mathieu/music/:/music gmsync
+sudo docker build -t gmusicsync:latest .
 ```
-** Regular run
+
+## First start
 ```
-sudo docker start -i gmsyncmatt
+sudo docker run --name gmusicsyncmatt -it -v /home/mathieu/music/:/music gmusicsync
+```
+
+## Regular run
+```
+sudo docker start -i gmusicsyncmatt
 ```
